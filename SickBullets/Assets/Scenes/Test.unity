@@ -743,10 +743,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -812,7 +812,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936122387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.85076964, y: -1.9927531, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -827,10 +827,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1936122387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a301f077a37450c42a049668e281bbde, type: 3}
+  m_Script: {fileID: 11500000, guid: 5181b230173f1da46bd54b57e0e16a0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  moveSpeed: 10
+  jumpSpeed: 10
+  accSpeed: 15
+  canJump: 0
+  canFall: 0
+  deaths: 0
+  deathCount: {fileID: 0}
+  shotSpawn: {fileID: 0}
+  jumpDelay: 0
+  fallDelay: 0
+  isFliped: 0
 --- !u!1 &2079565749
 GameObject:
   m_ObjectHideFlags: 0
