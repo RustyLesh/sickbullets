@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     float fallDelayCounter;
     BoxCollider2D bc;
     Rigidbody2D rb;
-    Animator playerAC;
+
     bool crouching;
 
     [HideInInspector] public bool isFliped;
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         bc = GetComponent<BoxCollider2D>();
 
-        playerAC = GetComponent<Animator>();
+        //playerAC = GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
@@ -101,10 +101,10 @@ public class PlayerMovement : MonoBehaviour
         {
             moveSpeed = tempMoveSpeed;
         }
-        Animating();
+        //Animating();
 
     }
-
+/*
     void Animating()
     {
         // Crouch
@@ -194,6 +194,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-
+    
     }
+*/
 }
